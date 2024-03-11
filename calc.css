@@ -240,3 +240,9 @@ form {
 .cost-top {
     padding-bottom: 1%;
 }
+
+@media screen and (max-width: 640px) {
+    * {
+        width: 100vw;
+    }
+  }

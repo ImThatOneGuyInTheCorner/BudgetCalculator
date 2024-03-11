@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('grossSalaryF2').innerText = `$${grossAnnual}`;
         document.getElementById('grossMonthlyF2').innerText = `$${Math.round(grossAnnual / 12)}`;
         let monthly = Math.round((((grossAnnual / 12) / 3) * 2) * (Math.pow(10, 0))) / (Math.pow(10, 0));
-        document.getElementById('monthlyF2').innerText = monthly;
+        document.getElementById('monthlyF2').innerText = `$${monthly}`;
         
         console.log(monthly);
         console.log(monthly * 0.1);
