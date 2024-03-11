@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="calc.js"></script>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<!-- help -->
+
+<body>
+    <!-- <section id="black"></section> -->
+    <section class="header">
+        <header>
+            <div id="eecu">
+            </div>
+            <h1 class="logo">
+                EECU Budget Calculator
+            </h1>
+        </header>
+    </section>
+
+
+    <nav>
+        <button id="back">Back</button>
+
+        <section id="progress" class="flex row">
+
+            <p class="progressed progressstep flex row ">1</p>
+            <p class="progressstep flex row">2</p>
+            <p class="progressstep flex row">3</p>
+        </section>
+        <!-- Bar will go here. -->
+
+        <button id="next">Next</button>
+
+    </nav>
+
+    <section id="content">
+        <section id="frame0" class="frame0">
+            <section class="backg">
+                <section>
+                    <section>
+                        <div class="alert"></div>
+                        <p>Gross Annual Income</p>
+                        <input id="grossAnnualIncome" type="text">
+                    </section>
+                    <section>
+                        <div id="alert2"></div>
+                        <p class="small">These are some real world job positions and their entry level Gross Salary (Annual Income
+                            before taxes). If you don't have a Salary yet pick one from this list!</p>
+                        <a href="/career.html">Starting Salaries</a>
+
+                    </section>
+                </section>
+                <section>
+
+                </section>
+            </section>
+        </section>
+        <section id="frame1" class="frame1 hide backg">
+            <section class="tax-container">
+                <section class="tax-top">
+                    <section>
+                        <p class="top">Gross Salary:</p>
+                        <form id="grossSalary">$0</form>
+                    </section>
+                    <div></div>
+                    <section>
+                        <p class="top">Gross Monthly:</p>
+                        <form id="grossMonthly">$0</form>
+                    </section>
+                </section>
+                <section>
+                    <p>Federal Taxes</p>
+                    <p style="position: absolute; left: 55%;">-12%</p>
+                    <form id="fT">$0</form>
+                </section>
+                <section>
+                    <p>State Taxes</p>
+                    <p style="position: absolute; left: 55%;">-7%</p>
+                    <form id="sT">$0</form>
+                </section>
+                <section>
+                    <p>Social Security</p>
+                    <p style="position: absolute; left: 55%;">-6.2%</p>
+                    <form id="sS">$0</form>
+                </section>
+                <section>
+                    <p>Medicare</p>
+                    <p style="position: absolute; left: 55%;">-1.45%</p>
+                    <form id="m">$0</form>
+                </section>
+                <section>
+                    <p>State Disability</p>
+                    <p style="position: absolute; left: 55%;">-0.01%</p>
+                    <form id="sD">$0</form>
+                </section>
+                <section>
+                    <p>Retire Investment</p>
+                    <p style="position: absolute; left: 55%;">-0.05%</p>
+                    <form id="rI">$0</form>
+                </section>
+                <section>
+                    <p>Medical Insurance</p>
+                    <p style="position: absolute; left: 55%;">-$180</p>
+                    <form id="mI">$0</form>
+                </section>
+                <section class="tax-bottom">
+                    <p>Net Monthly:</p>
+                    <form id="netMonthly">$0</form>
+                </section>
+            </section>
+            <section class="tax-alert">
+                <div class="alert2"></div>
+                <p class="right-words">These are the taxes for Fresno, CA. Keep in mind they might vary from place to place</p>
+            </section>
+        </section>
+        <section id="frame2" class="frame2 hide backg">
+            <section class="cost-container">
+                <section class="cost-top">
+                    <section>
+                        <p>Gross Salary:</p>
+                        <form id="grossSalaryF2"></form>
+                    </section>
+                    <div></div>
+                    <section>
+                        <p>Gross Monthly:</p>
+                        <form id="grossMonthlyF2"></form>
+                    </section>
+                    <div></div>
+                    <section>
+                        <p>Monthly Income:</p>
+                        <form id="monthlyF2"></form>
+                    </section>
+                </section>
+                <section>
+                    <p>Giving</p>
+                    <div></div>
+                    <div class="color" style="background-color: #FF0000"></div>
+                    <form id="g"></form>
+                </section>
+                <section>
+                    <p>Food</p>
+                    <div></div>
+                    <div class="color" style="background-color: #FF9900"></div>
+                    <form id="f"></form>
+                </section>
+                <section>
+                    <p>Utilities</p>
+                    <div></div>
+                    <div class="color" style="background-color: #FFE500"></div>
+                    <form id="u"></form>
+                </section>
+                <section>
+                    <p>Housing</p>
+                    <div></div>
+                    <div class="color" style="background-color: #CCFF00"></div>
+                    <form id="h"></form>
+                </section>
+                <section>
+                    <p>Transportation</p>
+                    <div></div>
+                    <div class="color" style="background-color: #00FF1A"></div>
+                    <form id="t"></form>
+                </section>
+                <section>
+                    <p>Insurance</p>
+                    <div></div>
+                    <div class="color" style="background-color: #00FFB2"></div>
+                    <form id="i"></form>
+                </section>
+                <section>
+                    <p>Household Items</p>
+                    <div></div>
+                    <div class="color" style="background-color: #00FFF0"></div>
+                    <form id="hI"></form>
+                </section>
+                <section>
+                    <p>Debt</p>
+                    <div></div>
+                    <div class="color" style="background-color: #0094FF"></div>
+                    <form id="d"></form>
+                </section>
+                <section>
+                    <p>Self Care</p>
+                    <div></div>
+                    <div class="color" style="background-color: #0500FF"></div>
+                    <form id="sC"></form>
+                </section>
+                <section>
+                    <p>Other</p>
+                    <div></div>
+                    <div class="color" style="background-color: #9E00FF"></div>
+                    <form id="o"></form>
+                </section>
+                <p class="right-words">Here's how we recommend you budget your monthly income. If you don't have debt, put it in savings!</p>
+            </section>
+            <!-- <section class="graph-container">
+                <section>$<p id="bar-text">0</p>
+                </section>
+            </section> -->
+        </section>
+    </section>
+
+    <footer>
+        <!-- <p> Designed and Developed by Finn Poduska and peers. Github-@ImThatOneGuyInTheCorner </p> -->
+    </footer>
+</body>
+
+</html>

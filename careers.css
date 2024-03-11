@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+#root {
+    padding: 1%;
+    border-width: .4em;
+    border-style: double;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    background-color: #FFEEE2;
+    width: 675px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#root > section {
+    margin: .5%;
+    width: 290px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #293952;
+    color: #FFFF;
+    padding: 30px;
+    font-size: 64px;
+    border-radius: 0px 0px 30px 30px;
+    padding: 30px;
+    width: 100%;
+}
+
+
+.logo::before {
+    content: url("icon/eecu_logo.png");
+}
