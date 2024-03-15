@@ -241,8 +241,17 @@ form {
     padding-bottom: 1%;
 }
 
-@media screen and (max-width: 640px) {
-    * {
-        width: 100vw;
+@media screen and (max-width: 800px){
+    .logo {
+        font-size: 32px;
     }
-  }
+    .logo::before {
+        display: none;
+    }
+    #frame1 {
+        height: fit-content;
+    }
+    #frame2 {
+        height: fit-content;
+    }
+}
