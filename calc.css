@@ -248,10 +248,9 @@ form {
     .logo::before {
         display: none;
     }
-    #frame1 {
+    #frame0, #frame1, #frame2 {
         height: fit-content;
-    }
-    #frame2 {
-        height: fit-content;
+        width: 100%;
+        font-size: medium;
     }
 }
