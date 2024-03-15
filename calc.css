@@ -244,6 +244,7 @@ form {
 @media screen and (max-width: 800px){
     .logo {
         font-size: 32px;
+        text-align: center;
     }
     .logo::before {
         display: none;
